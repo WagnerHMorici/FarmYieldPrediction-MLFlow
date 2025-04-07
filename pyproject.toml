@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "farmyieldprediction-mlflow"
+version = "0.1.0"
+description = ""
+authors = ["WagnerHMorici <wagner.morici@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+mlflow = "^2.21.3"
+pandas = "^2.2.3"
+scikit-learn = "^1.6.1"
+seaborn = "^0.13.2"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
