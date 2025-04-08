@@ -6,8 +6,11 @@ from sklearn.model_selection import train_test_split
 
 from sklearn.ensemble import RandomForestRegressor
 
-from sklearn import metrics
+from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 
+
+mlflow.set_tracking_uri('http://127.0.0.1:5000/')
+mlflow.set_experiment(experiment_id=734718012324761974)
 
 df = pd.read_csv('dataset\crop_yield_data.csv')
 
@@ -32,9 +35,30 @@ with mlflow.start_run():
     y_train_predict = randon_forest_model.predict(X_train)
     y_test_predict = randon_forest_model.predict(X_test)
 
-    acc_train = metrics.accuracy_score(y_train, y_train_predict)
-    acc_test = metrics.accuracy_score(y_test, y_test_predict)
+    mse_train = mean_squared_error(y_train, y_train_predict)
+    mae_train = mean_absolute_error(y_train, y_train_predict)
+    r2_train = r2_score(y_train, y_train_predict)
 
-    mlflow.log_metrics({"acc_train": acc_train, "acc_test": acc_test})
+    mse_test = mean_squared_error(y_test, y_test_predict)
+    mae_test = mean_absolute_error(y_test, y_test_predict)
+    r2_test = r2_score(y_test, y_test_predict)
 
+    mlflow.log_metrics({
+        "mse_train": mse_train,
+        "mae_train": mae_train,
+        "r2_train": r2_train,
+        "mse_test": mse_test,
+        "mae_test": mae_test,
+        "r2_test": r2_test
+    })
+
+    print("Treino:")
+    print("MSE:", mse_train)
+    print("MAE:", mae_train)
+    print("R²:", r2_train)
+
+    print("\nTeste:")
+    print("MSE:", mse_test)
+    print("MAE:", mae_test)
+    print("R²:", r2_test)
 

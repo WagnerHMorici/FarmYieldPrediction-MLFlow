@@ -1,0 +1,6 @@
+artifact_location: mlflow-artifacts:/734718012324761974
+creation_time: 1744131064261
+experiment_id: '734718012324761974'
+last_update_time: 1744131064261
+lifecycle_stage: active
+name: crop-yield-model-exp

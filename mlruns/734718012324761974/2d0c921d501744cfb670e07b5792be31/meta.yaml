@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/734718012324761974/2d0c921d501744cfb670e07b5792be31/artifacts
+end_time: 1744131223149
+entry_point_name: ''
+experiment_id: '734718012324761974'
+lifecycle_stage: active
+run_id: 2d0c921d501744cfb670e07b5792be31
+run_name: mysterious-pig-393
+run_uuid: 2d0c921d501744cfb670e07b5792be31
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744131211300
+status: 4
+tags: []
+user_id: wagne

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/734718012324761974/cfdc78f4dbb6406298eb064dd31349c4/artifacts
+end_time: 1744131457679
+entry_point_name: ''
+experiment_id: '734718012324761974'
+lifecycle_stage: active
+run_id: cfdc78f4dbb6406298eb064dd31349c4
+run_name: gregarious-colt-336
+run_uuid: cfdc78f4dbb6406298eb064dd31349c4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744131450416
+status: 3
+tags: []
+user_id: wagne

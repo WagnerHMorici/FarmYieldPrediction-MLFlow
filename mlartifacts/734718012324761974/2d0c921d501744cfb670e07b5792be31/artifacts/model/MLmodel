@@ -1,0 +1,30 @@
+artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.2
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+is_signature_from_type_hint: false
+mlflow_version: 2.21.3
+model_size_bytes: 4781053
+model_uuid: 82c90fcc7136418fac17cd8eb14834c7
+prompts: null
+run_id: 2d0c921d501744cfb670e07b5792be31
+signature:
+  inputs: '[{"type": "long", "name": "rainfall_mm", "required": true}, {"type": "long",
+    "name": "soil_quality_index", "required": true}, {"type": "long", "name": "farm_size_hectares",
+    "required": true}, {"type": "long", "name": "sunlight_hours", "required": true},
+    {"type": "long", "name": "fertilizer_kg", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-04-08 16:53:36.871517'
