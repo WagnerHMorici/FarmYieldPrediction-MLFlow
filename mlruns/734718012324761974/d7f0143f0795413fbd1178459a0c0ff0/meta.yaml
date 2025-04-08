@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/734718012324761974/d7f0143f0795413fbd1178459a0c0ff0/artifacts
+end_time: 1744131917658
+entry_point_name: ''
+experiment_id: '734718012324761974'
+lifecycle_stage: active
+run_id: d7f0143f0795413fbd1178459a0c0ff0
+run_name: righteous-wasp-364
+run_uuid: d7f0143f0795413fbd1178459a0c0ff0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744131903599
+status: 3
+tags: []
+user_id: wagne

@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1744132125382
+current_stage: None
+description: ''
+last_updated_timestamp: 1744132125382
+name: crop-yield-model
+run_id: d7f0143f0795413fbd1178459a0c0ff0
+run_link: ''
+source: mlflow-artifacts:/734718012324761974/d7f0143f0795413fbd1178459a0c0ff0/artifacts/model
+status: READY
+status_message: null
+storage_location: mlflow-artifacts:/734718012324761974/d7f0143f0795413fbd1178459a0c0ff0/artifacts/model
+user_id: null
+version: 1
